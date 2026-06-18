@@ -1,5 +1,5 @@
-from main_menu import start
 from main_menu import mainmenu
+from main_menu import start
 from game import game
 
 mainmenu()

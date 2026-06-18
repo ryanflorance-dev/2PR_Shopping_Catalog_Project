@@ -1,12 +1,11 @@
 start = 0
 def mainmenu():
-    start = 0
     print(f"Welcome")
     print("1: start game")
     print("2: quit")
     option = int(input())
     if option == 1:
-        start = 1
+        start + 1 == start
         print(f"{start}")
         return start
     elif option == 2:
