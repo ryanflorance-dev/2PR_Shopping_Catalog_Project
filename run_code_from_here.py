@@ -1,8 +1,8 @@
+from main_menu import start
 from main_menu import mainmenu
 from game import game
 
-start = 0
 mainmenu()
-
+print(f"{start}")
 if start == 1:
     game()
