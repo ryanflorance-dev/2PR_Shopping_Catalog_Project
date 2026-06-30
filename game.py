@@ -19,7 +19,7 @@ def mainmenu():
         print("You wrote out the number instead of using the digit.")
 
 def game():
-    pass
+    print("Keep in mind that your progress does not save when the game is closed.")
 
 mainmenu()
 if start == 1:
