@@ -1,8 +1,15 @@
 from data.customer import customers 
+import sys, time, re, random, os, subprocess, shutil
 from data.stock import stock
-import sys, time, subprocess
 # from data.stock import stock
 
+# Clear screen on window, linux, mac
+def clearScreen():
+    op_system = sys.platform
+    if op_system == 'win32':
+        subprocess.run('cls', shell=True)
+    elif op_system == 'linux' or op_system == 'darwin':
+        subprocess.run('clear', shell=True)
 
 def getName():
     while True:
@@ -42,10 +49,11 @@ def getMenu():
 def checkStock():
     time.sleep(0.5) # Pauses for 1 second
     clearScreen()
-    print("\n--------------------- In Stock ----------------------")
+    print("\n--------------------- In Store ----------------------")
     
     for i, (key, value) in enumerate(stock.items(), start=1):
         print(f"{i:>2}: {key:<37} - Qty: {value['qty']:<7} Price: ${value['price']:.2f}")
+    print("")
     time.sleep(40)  # Pauses for 40 seconds
     print("\nReturning to main menu...")
     clearScreen()
