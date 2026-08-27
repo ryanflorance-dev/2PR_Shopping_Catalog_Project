@@ -1,6 +1,6 @@
 from modules.functions import getMenu, checkStock, shop, checkBasket, modify, checkOut, account, getName
 
-# Main functions handles the introduction & main menu
+# The main function handles the introduction & main menu
 def main(name):
     if not name:
         return      
@@ -25,9 +25,9 @@ def main(name):
             exit()
             break
      
-# --------------Main routine--------------------    
+# --------------------Main routine--------------------    
 if __name__ == "__main__":
-    # Get the name first, then pass it into main
+    #This is to get the name first and then pass it into main
     while True:
         user_name = getName()
         if user_name:
